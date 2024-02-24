@@ -1,3 +1,6 @@
+/* ######## App.css stylesheet ######## */
+
+/* ###### Color variables in root element ###### */
 :root {
   /* Primary colors */
   --Soft-blue: hsl(215, 51%, 70%);
@@ -8,6 +11,7 @@
   --White: hsl(0, 0%, 100%);
 }
 
+/* #### General styles #### */
 .App {
   display: flex;
   justify-content: center;
@@ -21,7 +25,9 @@
   border-radius: 20px;
   width: 70%;
 }
+/* #### End of General styles #### */
 
+/* #### Styles for Main logo #### */
 .main-logo-div {
   border-radius: inherit;
   position: relative;
@@ -55,6 +61,7 @@
   transition: opacity 0.3s linear;
 }
 
+/* # Hover styles for elements # */
 .main-logo-div:hover .hover-container {
   opacity: 0.4;
 }
@@ -62,7 +69,10 @@
 .main-logo-div:hover .hover-icon {
   opacity: 1;
 }
+/* #### End of Main logo styles #### */
 
+/* #### Styles for info body #### */
+/* ## General info body styles ## */
 .info-body-div {
   display: flex;
   flex-direction: column;
@@ -83,8 +93,7 @@
   transition: color 0.3s linear;
   cursor: pointer;
 }
-
-
+/* # Hover style for info heading # */
 .info-heading:hover {
   color: var(--Cyan);
 }
@@ -97,7 +106,9 @@
   color: var(--Soft-blue);
   margin: 0 0 3% 0;
 }
+/* ## End of General info body styles ## */
 
+/* ## Styles for info body price section ## */
 .info-price-div {
   display: flex;
   flex-direction: row;
@@ -136,7 +147,9 @@
   font-weight: 400;
   color: var(--Soft-blue);
 }
+/* ## End of styles for info body price section ## */
 
+/* ## Styles for info body user section ## */
 .user-div {
   display: flex;
   flex-direction: row;
@@ -158,16 +171,21 @@
   cursor: pointer;
 }
 
+/* # Username hover # */
 .username:hover {
   color: var(--Cyan);
 }
+/* ## End of styles for info body user section ## */
 
+/* #### Responsive design #### */
+/* ## Tablet responsive design ## */
 @media screen and (max-width: 768px) {
   .main-body {
     width: 50%;
   }
 }
 
+/* ## Mobile responsive design ## */
 @media screen and (max-width: 425px) {
   .App {
     width: 100vw;
@@ -182,8 +200,10 @@
   }
 }
 
+/* ## Smaller mobile responsive design ## */
 @media screen and (max-width: 320px) {
   .info-box {
     width: 40%;
   }
 }
+/* #### End of responsive design #### */

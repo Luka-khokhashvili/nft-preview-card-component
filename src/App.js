@@ -1,3 +1,4 @@
+//! importing elements
 import mainLogo from "./images/image-equilibrium.jpg";
 import hoverIcon from "./images/icon-view.svg";
 import ethereumIcon from "./images/icon-ethereum.svg";
@@ -5,6 +6,7 @@ import clockIcon from "./images/icon-clock.svg";
 import userAvatar from "./images/image-avatar.png";
 import "./App.css";
 
+// Main component
 function App() {
   return (
     <div className="App">
@@ -20,6 +22,7 @@ function App() {
   );
 }
 
+// Information body component
 function InfoBody() {
   return (
     <div className="info-body-div">
@@ -29,6 +32,7 @@ function InfoBody() {
   );
 }
 
+// Component for info section of information body 
 function Info() {
   return (
     <div className="info-section">
@@ -41,6 +45,7 @@ function Info() {
   );
 }
 
+// Component for price section of information body 
 function InfoPrice() {
   return (
     <div className="info-price-div">
@@ -56,6 +61,7 @@ function InfoPrice() {
   );
 }
 
+// Component for user section of information body 
 function User() {
   return (
     <div className="user-div">
@@ -68,4 +74,5 @@ function User() {
   );
 }
 
+// exporting Main Component
 export default App;
